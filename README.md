@@ -7,7 +7,7 @@ How to use?
 
 Example of using:
 ~~~
-<style src="<?php Less::compile('style') ?>">
+<link href="<?php echo URL::base() . Less::compile('style'); ?>" rel="stylesheet">
 ~~~
 
 *Note: if in the config `only_development` is true, .less file was compiled every time when function call. Else .less file was compiled, if file does not exist.*
